@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <title>NoRRA - MenShirt</title>
+    <link rel="shortcut icon" href="img/suit.png">
+</head>
+<body>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+   $(document).ready(function(){
+     $('nav#primary-nav , div#featured-nav').click(function() {
+      $('nav#primary-nav').toggleClass('primary-nav-off primary-nav-on');
+      $('div#featured-nav').toggleClass('featured-nav-off featured-nav-on');
+    });
+   });
+ </script>
+ <!-- ---------------------------------------------------------------------------- -->
+
+
+ <!-- nav bar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-warning" >
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">NoR<strong>RA</strong> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="fendi.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Product Catagolories
+                        </a>
+                        <ul class="dropdown-menu" style="background-color:darkgrey;color: yellow;" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="fendi.html">Fendi</a></li>
+                            <li><a class="dropdown-item" href="valentina.html">Valentina</a></li>
+                            <li><a class="dropdown-item" href="supreme.html">Supreme</a></li>
+                            <li><a class="dropdown-item" href="versace.html">Versace</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- nav bar -->
+
+
+
+
+
+
+<!-- side bar catalog -->
+<!----[ Page Wrapper ]----->
+<div class="page-wrapper">
+
+
+ <!----[ Header | Logo | Social Nav ]----->
+ <header class="top-bar"></header>
+
+
+ <nav id="primary-nav" class="primary-nav-off">
+  <a href="#" class="primary-menu-icon-on"></a>
+  <nav class="navbar-primary">
+   <ul>
+    <li>
+     <li><a href="#">Navigation</a></li>
+     <ul class="sub-nav sub-nav-off">
+      <!-- toggle class off and on to reveal-->
+      <li><a href="index.html">Home</a></li>
+      <li><a href="fendi.html">Fendi</a></li>
+      <li><a href="supreme.html">Supreme</a></li>
+      <li><a href="versace.html">Versace</a></li>
+      <li><a href="valentina.html">Valentina</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </li>
+</ul>
+</nav>
+</nav>
+
+<!----[ Featured Content Nav, right panel | UI target offloaded to Primary Nav ]----->
+</div>
+<!-- side bar catalog -->
+
+
+<div class="container">
+  <div class="row col-sm-12">
+    <!-- Start Slider -->
+    <section id= "slider">
+
+      <!-- Start Slider Checked -->
+      <input type= "radio" name="slider" id= "slide-1-radio" checked />
+      <input type= "radio" name="slider" id= "slide-2-radio" />
+      <input type= "radio" name="slider" id= "slide-3-radio" />
+      <!-- End Slider Checked -->
+
+      <!-- Start Slides -->
+      <div class= "slides">
+        <div class= "slide">
+          <a href= "#"><img src= "img/Fendi/01.jpg" alt="slide-1" /></a>
+        </div>
+        <div class= "slide">
+          <a href= "#"><img src= "img/Fendi/02.jpg" alt="slide-1" /></a>
+        </div>
+        <div class= "slide">
+          <a href= "#"><img src= "img/Fendi/05.jpg" alt="slide-1" /></a>
+        </div>
+      </div>
+      <!-- End Slides -->
+
+      <!-- Start Slider Control -->
+
+      <!-- Start Prevese Arrow -->
+      <div class="prev-arrow arrow">
+        <label for= "slide-1-radio" id= "prev-1-arrow">
+          <i class= "fa fa-arrow-left"></i>
+          <span class= "thumb">
+            <img src= "img/Fendi/01.jpg" alt="slide-1-thumb" />
+          </span>
+        </label>
+        <label for= "slide-2-radio" id= "prev-2-arrow">
+          <i class= "fa fa-arrow-left"></i>
+          <span class= "thumb">
+            <img src= "img/Fendi/02.jpg" alt="slide-2-thumb" />
+          </span>
+        </label>
+        <label for= "slide-3-radio" id= "prev-3-arrow">
+          <i class= "fa fa-arrow-left"></i>
+          <span class= "thumb">
+            <img src= "img/Fendi/05.jpg" alt="slide-3-thumb" />
+          </span>
+        </label>
+      </div>
+      <!-- Start Prevese Arrow -->
+
+      <!-- Start next Arrow -->
+      <div class="next-arrow arrow">
+        <label for= "slide-1-radio" id= "next-1-arrow">
+          <i class= "fa fa-arrow-right"></i>
+          <span class= "thumb">
+            <img src= "img/Fendi/01.jpg" alt="slide-1-thumb" />
+          </span>
+        </label>
+        <label for= "slide-2-radio" id= "next-2-arrow">
+          <i class= "fa fa-arrow-right"></i>
+          <span class= "thumb">
+            <img src= "img/Fendi/02.jpg" alt="slide-2-thumb" />
+          </span>
+        </label>
+        <label for= "slide-3-radio" id= "next-3-arrow">
+          <i class= "fa fa-arrow-right"></i>
+          <span class= "thumb">
+            <img src= "img/Fendi/05.jpg" alt="slide-3-thumb" />
+          </span>
+        </label>s
+      </div>
+      <!-- Start next Arrow -->
+
+      <!-- End Slider Control -->
+    </section>
+    <!-- End Slider -->
+
+  </div>
+</div>
+
+
+
+
+<div class="container" style="margin-top: 40px;">
+
+
+<h5 class="sale">Sale Products </h5>
+
+<a class="a-tag" href="fendidetail.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-square-fill" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm10.5 10V4a.5.5 0 0 0-.832-.374l-4.5 4a.5.5 0 0 0 0 .748l4.5 4A.5.5 0 0 0 10.5 12z"/>
+</svg> Details!</a>
+
+  <!-- Card deck -->
+  <div class="card-deck row">
+
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <!-- Card -->
+      <div class="cardided">
+
+        <!--Card image-->
+        <div class="view overlay">
+          <img class="card-img-top" src="img/Fendi/a1.jpg" alt="Card image cap">
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!--Card content-->
+        <div class="card-body" style="text-align: center;">
+
+          <!--Title-->
+          <h4 class="card-title">Fendi Blouson jacket</h4>
+          <!--Text-->
+          <p class="card-text">Price : 14300000 MMKS .</p>
+          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          <input type="submit" style="background-color: blue;color: white;" class="btn btn-light-blue btn-md" value="Purchase">
+
+
+        </div>
+
+      </div>
+      <!-- Card -->
+    </div>
+
+    <!-- ------------------- --> 
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <!-- Card -->
+      <div class="cardided">
+
+        <!--Card image-->
+        <div class="view overlay">
+          <img class="card-img-top" src="img/Fendi/a2.jpg" alt="Card image cap">
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!--Card content-->
+        <div class="card-body" style="text-align: center;">
+
+          <!--Title-->
+          <h4 class="card-title">Fendi jacket</h4>
+          <!--Text-->
+          <p class="card-text">Price : $8900 .</p>
+          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          <input type="submit" style="background-color: blue;color: white;" class="btn btn-light-blue btn-md" value="Purchase">
+
+        </div>
+
+      </div>
+      <!-- Card -->
+    </div>
+    <!-- ------------------- --> 
+
+    <!-- ------------------- --> 
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <!-- Card -->
+      <div class="cardided">
+
+        <!--Card image-->
+        <div class="view overlay">
+          <img class="card-img-top" src="img/Fendi/a5.jpg" style="height:367px;" alt="Card image cap">
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!--Card content-->
+        <div class="card-body" style="text-align: center;">
+
+          <!--Title-->
+          <h4 class="card-title">Fendi Sweatshirt</h4>
+          <!--Text-->
+          <p class="card-text">Price : $920 .</p>
+          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          <input type="submit" style="background-color: blue;color: white;" class="btn btn-light-blue btn-md" value="Purchase">
+
+        </div>
+
+      </div>
+      <!-- Card -->
+    </div>
+    <!-- ------------------- --> 
+
+
+    <!-- ------------------- --> 
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <!-- Card -->
+      <div class="cardided">
+
+        <!--Card image-->
+        <div class="view overlay">
+          <img class="card-img-top" src="img/Fendi/a6.jpg" alt="Card image cap">
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!--Card content-->
+        <div class="card-body" style="text-align: center;">
+
+          <!--Title-->
+          <h4 class="card-title">Fendi Blouson</h4>
+          <!--Text-->
+          <p class="card-text">Price : 16500000 MMK .</p>
+          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          <input type="submit" style="background-color: blue;color: white;" class="btn btn-light-blue btn-md" value="Purchase">
+
+        </div>
+
+      </div>
+      <!-- Card -->
+    </div>
+    <!-- ------------------- --> 
+
+    <!-- ------------------- --> 
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <!-- Card -->
+      <div class="cardided">
+
+        <!--Card image-->
+        <div class="view overlay">
+          <img class="card-img-top" src="img/Fendi/a9.jpg" style="height: 340px;" alt="Card image cap">
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!--Card content-->
+        <div class="card-body" style="text-align: center;">
+
+          <!--Title-->
+          <h4 class="card-title">Fendi Nyion Logo Plaque black Padded jacket</h4>
+          <!--Text-->
+          <p class="card-text">Price : 2531000 MMK .</p>
+          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          <input type="submit" style="background-color: blue;color: white;" class="btn btn-light-blue btn-md" value="Purchase">
+
+        </div>
+
+      </div>
+      <!-- Card -->
+    </div>
+    <!-- ------------------- -->  
+    <!-- ------------------- --> 
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <!-- Card -->
+      <div class="cardided">
+
+        <!--Card image-->
+        <div class="view overlay">
+          <img class="card-img-top" src="img/Fendi/a11.jpg" style="height: 340px;" alt="Card image cap">
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!--Card content-->
+        <div class="card-body" style="text-align: center;">
+
+          <!--Title-->
+          <h4 class="card-title">Fendi FF Black Nylon Down Jacket</h4>
+          <!--Text-->
+          <p class="card-text">Price : 53400000 MMK .</p>
+          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          <input type="submit" style="background-color: blue;color: white;" class="btn btn-light-blue btn-md" value="Purchase">
+
+        </div>
+
+      </div>
+      <!-- Card -->
+    </div>
+    <!-- ------------------- --> 
+    <!-- ------------------- --> 
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <!-- Card -->
+      <div class="cardided">
+
+        <!--Card image-->
+        <div class="view overlay">
+          <img class="card-img-top" src="img/Fendi/a12.jpg" style="height: 338px;" alt="Card image cap">
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!--Card content-->
+        <div class="card-body" style="text-align: center;">
+
+          <!--Title-->
+          <h4 class="card-title">Fendi Roma Mania Black Hoodie</h4>
+          <!--Text-->
+          <p class="card-text">Price : 1831000 MMK .</p>
+          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          <input type="submit" style="background-color: blue;color: white;" class="btn btn-light-blue btn-md" value="Purchase">
+
+        </div>
+
+      </div>
+      <!-- Card -->
+    </div>
+    <!-- ------------------- --> 
+    <!-- ------------------- --> 
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <!-- Card -->
+      <div class="cardided">
+
+        <!--Card image-->
+        <div class="view overlay">
+          <img class="card-img-top" src="img/Fendi/a13.jpg" alt="Card image cap">
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!--Card content-->
+        <div class="card-body" style="text-align: center;">
+
+          <!--Title-->
+          <h4 class="card-title">FENDI Sweatshirt</h4>
+          <!--Text-->
+          <p class="card-text">Price : $1290 .</p>
+          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          <input type="submit" style="background-color: blue;color: white;" class="btn btn-light-blue btn-md" value="Purchase">
+
+        </div>
+
+      </div>
+      <!-- Card -->
+    </div>
+    <!-- ------------------- --> 
+
+    <!-- ------------------- --> 
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <!-- Card -->
+      <div class="cardided">
+
+        <!--Card image-->
+        <div class="view overlay">
+          <img class="card-img-top" src="img/Fendi/a14.jpg" alt="Card image cap">
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!--Card content-->
+        <div class="card-body" style="text-align: center;">
+
+          <!--Title-->
+          <h4 class="card-title">FENDI Sweatshirt</h4>
+          <!--Text-->
+          <p class="card-text">Price : $1250 .</p>
+          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          <input type="submit" style="background-color: blue;color: white;" class="btn btn-light-blue btn-md" value="Purchase">
+
+        </div>
+
+      </div>
+      <!-- Card -->
+    </div>
+    <!-- ------------------- --> 
+
+    <!-- ------------------- --> 
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <!-- Card -->
+      <div class="cardided">
+
+        <!--Card image-->
+        <div class="view overlay">
+          <img class="card-img-top" src="img/Fendi/a15.jpg" style="height:380px;" alt="Card image cap">
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!--Card content-->
+        <div class="card-body" style="text-align: center;">
+
+          <!--Title-->
+          <h4 class="card-title">FENDI Blouson Jacket</h4>
+          <!--Text-->
+          <p class="card-text">Price : $8400 .</p>
+          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          <input type="submit" style="background-color: blue;color: white;" class="btn btn-light-blue btn-md" value="Purchase">
+        </div>
+
+      </div>
+      <!-- Card -->
+    </div>
+    <!-- ------------------- --> 
+
+    <!-- ------------------- --> 
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <!-- Card -->
+      <div class="cardided mb-4">
+
+        <!--Card image-->
+        <div class="view overlay">
+          <img class="card-img-top" src="img/Fendi/a17.jpg" style="height: 350px;" alt="Card image cap">
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!--Card content-->
+        <div class="card-body" style="text-align: center;">
+
+          <!--Title-->
+          <h4 class="card-title">Fendi Woven Karligraphy FF Black T Shirt</h4>
+          <!--Text-->
+          <p class="card-text">Price : 1119000 MMK .</p>
+          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          <input type="submit" style="background-color: blue;color: white;" class="btn btn-light-blue btn-md" value="Purchase">
+
+        </div>
+
+      </div>
+      <!-- Card -->
+    </div>
+
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <!-- Card -->
+      <div class="cardided mb-4">
+
+        <!--Card image-->
+        <div class="view overlay">
+          <img class="card-img-top" src="img/Fendi/a18.jpg" style="height: 350px;" alt="Card image cap">
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!--Card content-->
+        <div class="card-body" style="text-align: center;">
+
+          <!--Title-->
+          <h4 class="card-title">Fendi FF Collar Half Sleeve Cotton Black</h4>
+          <!--Text-->
+          <p class="card-text">Price : 10300000 MMK .</p>
+          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          <input type="submit" style="background-color: blue;color: white;" class="btn btn-light-blue btn-md" value="Purchase">
+
+        </div>
+
+      </div>
+      <!-- Card -->
+    </div>
+
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <!-- Card -->
+      <div class="cardided">
+
+        <!--Card image-->
+        <div class="view overlay">
+          <img class="card-img-top" src="img/Fendi/a19.jpg" style="height: 374px;" alt="Card image cap">
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!--Card content-->
+        <div class="card-body" style="text-align: center;">
+
+          <!--Title-->
+          <h4 class="card-title">FENDI Blouson Jacke</h4>
+          <!--Text-->
+          <p class="card-text">Price : $2650 .</p>
+          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          <input type="submit" style="background-color: blue;color: white;" class="btn btn-light-blue btn-md" value="Purchase">
+
+        </div>
+
+      </div>
+      <!-- Card -->
+    </div>
+
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <!-- Card -->
+      <div class="cardided mb-4">
+
+        <!--Card image-->
+        <div class="view overlay">
+          <img class="card-img-top" src="img/Fendi/a20.jpg" style="height: 350px;" alt="Card image cap">
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!--Card content-->
+        <<div class="card-body" style="text-align: center;">
+
+          <!--Title-->
+          <h4 class="card-title">FENDI BLACK LOGO T-SHIRT</h4>
+          <!--Text-->
+          <p class="card-text">Price : $599 .</p>
+          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          <input type="submit" style="background-color: blue;color: white;" class="btn btn-light-blue btn-md" value="Purchase">
+
+        </div>
+
+      </div>
+      <!-- Card -->
+    </div>
+
+    <div class="col-xs-12 col-sm-6 col-md-4">  
+      <!-- Card -->
+      <div class="cardided mb-4">
+
+        <!--Card image-->
+        <div class="view overlay">
+          <img class="card-img-top" src="img/Fendi/a21.jpg" style="height: 350px;" alt="Card image cap">
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!--Card content-->
+        <div class="card-body" style="text-align: center;">
+
+          <!--Title-->
+          <h4 class="card-title">FENDI ARMY GREEN LOGO T-SHIRT</h4>
+          <!--Text-->
+          <p class="card-text">Price : $599 .</p>
+          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          <input type="submit" style="background-color: blue;color: white;" class="btn btn-light-blue btn-md" value="Purchase">
+        </div>
+
+      </div>
+      <!-- Card -->
+    </div>
+
+
+
+
+  </div>
+  <!-- Card deck -->
+  
+</div>
+
+
+
+<footer class="footer-section">
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="img/m.png" style="width:80px;height: 80px;" class="img-fluid" alt="logo"></a>
+                            </div>
+                            <div class="footer-text">
+                                <p>Though become Things.</p>
+                                <p>Your Dream is My Wish.</p>
+
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Follow us</span>
+                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Product Official Links</h3>
+                            </div>
+                            <ul>
+                                
+                                <li><a href="#">Versasces</a></li>
+                                <li><a href="#">Vendi</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Subscribe</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                            </div>
+                            <div class="subscribe-form">
+                                <form action="#">
+                                    <input type="text" placeholder="Email Address">
+                                    <button><i class="fab fa-telegram-plane">-></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2018, All Right Reserved <a href="#">Htet Aung Win</a></p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <!-- <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Policy</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+  <!-- ---------------------------------------------------------------------------- -->
+
+</body>
+</html>
